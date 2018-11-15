@@ -1,0 +1,111 @@
+ol,ul {
+    font-weight: 400;
+    margin: 16px 0 0;
+    padding-left: 20px
+}
+
+@media (min-width: 40.0625em) {
+    ol,ul {
+        margin:24px 0 0
+    }
+}
+
+ol li,ul li {
+    margin: 8px 0 0
+}
+
+ol li:first-child,ul li:first-child {
+    margin-top: 0
+}
+
+.nhsuk-c-panel {
+    background: #fff;
+    margin: 72px 0 56px;
+    padding: 24px;
+    padding-top: 0;
+    position: relative
+}
+
+@media (max-width: 40.0525em) {
+    .nhsuk-c-panel {
+        margin:40px 0
+    }
+}
+
+.nhsuk-c-panel h3 {
+    background: #005eb8;
+    color: #fff;
+    display: inline-block;
+    margin: 0 -24px 8px;
+    padding: 8px 24px;
+    position: relative;
+    top: -16px
+}
+
+@media (max-width: 40.0525em) {
+    .nhsuk-c-panel h3 {
+        top:-8px
+    }
+}
+
+.nhsuk-c-panel h3+p {
+    margin-top: 0
+}
+
+.nhsuk-c-panel__warning {
+    background: #fffbce;
+    color: #212b32
+}
+
+.nhsuk-c-panel__warning h3 {
+    background: #ffed00;
+    color: #212b32
+}
+
+.nhsuk-c-panel>:first-child {
+    margin-top: 0
+}
+
+.nhsuk-c-panel>:last-child {
+    margin-bottom: 0
+}
+
+.nhsuk-list--check,.nhsuk-list--cross {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 40px;
+    position: relative
+}
+
+.nhsuk-list--check .nhsuk-icon__tick,.nhsuk-list--cross .nhsuk-icon__tick {
+    left: -4px;
+    margin-top: -5px;
+    position: absolute
+}
+
+.nhsuk-list--check .nhsuk-icon__cross,.nhsuk-list--cross .nhsuk-icon__cross {
+    left: -4px;
+    margin-top: -5px;
+    position: absolute
+}
+.nhsuk-icon {
+    height: 34px;
+    width: 34px
+}
+
+.nhsuk-icon__cross {
+    fill: #da291c
+}
+
+.nhsuk-icon__cross--fallback {
+    padding-top: 10px
+}
+
+.nhsuk-icon__tick {
+    fill: none;
+    stroke: #007f3b
+}
+
+.nhsuk-icon__tick--fallback {
+    padding-top: 9px
+}
