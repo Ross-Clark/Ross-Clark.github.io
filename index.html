@@ -1,176 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>NHS - Home</title>
+<html>
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/website.css">
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/website.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
-  
-  <body>
-    <!--aboutModal-->
-      <div class="modal fade" id="aboutModal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-        
-              <div class="modal-header">
-                <h4 class="modal-title">About</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-        
-              <div class="modal-body">
-                This website was made for Codeup.
+    <head>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/nhsuk-0.0.0.min.css">
 
-                It was meant to be a parody of <a href="https://www.nhs.uk/">NHS.UK</a>, giving poor health advise instead of good health advise.
-              </div>
-        
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              </div>
-        
+    <!-- Scripts -->
+    <script src="js/nhsuk-0.0.0.min.js" defer></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Favicons -->
+    <!--[if IE]><link rel="shortcut icon" href="assets/favicons/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" href="assets/favicons/favicon.png">
+    <meta charset="UTF-8">
+    <title> TEST </title>
+    </head>
+
+    <body>
+        <h1> HEADER 1 </h1>
+<!--Care card-->
+        <div class="nhsuk-c-care-card nhsuk-c-care-card--grey">
+            <div class="nhsuk-c-care-card__heading">
+                <h3>Call 111</h3>
             </div>
-          </div>
-      </div>
-      <!--Alert-->
-      <div class="alert alert-danger alert-dismissible flush row">
-        <div class="container">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>This is a parody website!</strong> If you would like real help or advice go to <a href="https://nhs.uk">nhs.uk</a>
+            <div class="nhsuk-c-care-card__content">
+                <p>If you can't speak to your GP and don't know what to do next.</p>
+            </div>
         </div>
-      </div>
-      <!--Nav-->
-      <nav class="navbar navbar-expand-md navbar-dark global-header">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="img/not_health_service.png" alt=Home></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="navbar-collapse collapse" id="collapsingNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">things</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">stuff</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="collapse">Link</a>
-              </li>
+<!--check list-->
+        <div class="nhsuk-c-panel">
+            <h3 id="Do">Do</h3>
+            <ul class="nhsuk-list nhsuk-list--check">
+                <li>
+                    <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+                        <image class="nhsuk-icon__tick nhsuk-icon__tick--fallback" src="/assets/images/icon-tick.png" xlink:href=""></image>
+                    </svg>
+                    cover blisters that are likely to burst with a soft plaster or dressing
+                </li>
+                <li>
+                    <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+                        <image class="nhsuk-icon__tick nhsuk-icon__tick--fallback" src="/assets/images/icon-tick.png" xlink:href=""></image>
+                    </svg>
+                    wash your hands before touching a burst blister
+                </li>
+                <li>
+                    <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+                        <image class="nhsuk-icon__tick nhsuk-icon__tick--fallback" src="/assets/images/icon-tick.png" xlink:href=""></image>
+                    </svg>
+                    allow the fluid in a burst blister to drain before covering it with a plaster or dressing
+                </li>
             </ul>
-          </div>
-          <div>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" href="#aboutModal">About</a>
-              </li>
+        </div>
+        <div class="nhsuk-c-panel">
+            <h3 id="Dont">Don't</h3>
+            <ul class="nhsuk-list nhsuk-list--cross">
+                <li>
+                    <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="st0" d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"></path>
+                        <path class="st0" d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"></path>
+                        <image class="nhsuk-icon__cross nhsuk-icon__cross--fallback" src="/assets/images/icon-cross.png" xlink:href=""></image>
+                    </svg>
+                    do not burst a blister yourself
+                </li>
+                <li>
+                    <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="st0" d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"></path>
+                        <path class="st0" d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"></path>
+                        <image class="nhsuk-icon__cross nhsuk-icon__cross--fallback" src="/assets/images/icon-cross.png" xlink:href=""></image>
+                    </svg>
+                   do not peel the skin off a burst blister
+                </li>
+                <li>
+                    <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="st0" d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"></path>
+                        <path class="st0" d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"></path>
+                        <image class="nhsuk-icon__cross nhsuk-icon__cross--fallback" src="/assets/images/icon-cross.png" xlink:href=""></image>
+                    </svg>
+                    do not pick at the edges of the remaining skin
+                </li>
+                <li>
+                    <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="st0" d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"></path>
+                        <path class="st0" d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"></path>
+                        <image class="nhsuk-icon__cross nhsuk-icon__cross--fallback" src="/assets/images/icon-cross.png" xlink:href=""></image>
+                    </svg>
+                    do not wear the shoes or use the equipment that caused your blister until it heals
+                </li>
             </ul>
-          </div>
         </div>
-      </nav>
-  <!--Content-->
-    <!--Hero image-->
-    <div class="hero-image">
-      <div class="hero-text">
-      <h1>Not Health Service</h1>
-      <p> Not here for you </p>
-      </div>
-    </div>
-    <!-- Services need to add appropriate links, when some content is made-->
-    <section class="stripe">
-      <div class="container">
-        <div class="row">
-         <h2 class="col-2">Services</h2>
-         <p class="col-9"></p>
-        </div>
-        <div class="row">
-        <h4 class= "col-3"> Things we do</h4>
-        <p class= "col-9"><p>
-        <br>
-        </div>
-          <div class="row justify-content-center">
-              <a href="content.html" class="button col-5">Content
-              <span class="chevron fas fa-chevron-right"></span>
-              </a>
-              <p class="col-2"> </p> 
-              <a href="testing.html" class="button col-5">Testing
-              <span class="chevron fas fa-chevron-right"></span>
-              </a> 
-          </div>
-          <div class="row justify-content-center">
-              <a href="content.html" class="button col-5">Content
-              <span class="chevron fas fa-chevron-right"></span>
-              </a>
-              <p class="col-2"> </p> 
-              <a href="content.html" class="button col-5">Content
-              <span class="chevron fas fa-chevron-right"></span>
-              </a> 
-          </div>
-          <div class="row justify-content-center">
-              <a href="content.html" class="button col-5">Content
-              <span class="chevron fas fa-chevron-right"></span>
-              </a>
-              <p class="col-2"> </p> 
-              <a href="content.html" class="button col-5">Content
-              <span class="chevron fas fa-chevron-right"></span>
-              </a> 
-        </div>             
-      </div> 
-    </section>
-    <!-- unhealthy living section-->
-    <section class="stripe">
-      <div class="container">
-        <div class="">
-          <h2>Lorem</h2>
-            <span class = "row ">
-            <p class ="col-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </span>
-            
-        </div>
-      </div>  
-    </section>
-    <!-- section 3-->
-    <section class="stripe">
-        <div class="container">
-          <div>
-            <h2>Lorem</h2>
-              <span class = "row">
-              <p class ="col-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </span>
-          </div>
-          <div>
-            <h2>Ipsum</h2>
-            <span class = "row">
-              <p class ="col-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <span class="col-6">
-              </span>  
-            </span>
-          </div>
-        </div>  
-    <!--footer - needs links added - white text - underlining-->
-    <footer class="global-footer">
-      <div class="container">
-        <span>
-          <ul class="row footer-ul">
-          <li class="footer-logo"><a href="index.html" class="footer-logo"><img src="img/not_health_service.png" alt=Home></a></li>
-          <li class="col-1 footer-list"></li>
-          <li class="col-2 footer-list"><a class="footer-list-item"  href="#"> Accessibility</a></li>
-          <li class="col-2 footer-list"><a class="footer-list-item" href="sitemap.html"> sitemap </a></li>
-          <li class="col-2 footer-list"></li>
-          <li class="col-2 footer-list"><a class="footer-list-item" href="#top"> return to top</a></li>
-          </ul>
-        </span>
-      </div>
-    </footer>
-  </body>
+    </body>
 </html>
